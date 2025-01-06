@@ -1,0 +1,80 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 60px; /* To account for fixed navbar */
+}
+
+/* Navigation Menu Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#navbar li {
+    margin: 0 20px;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#navbar a:hover {
+    background-color: #575757;
+    color: #f8c846; /* Gold color on hover */
+}
+
+/* Active section highlighting */
+#navbar a.active {
+    background-color: #f8c846;
+    color: #222;
+}
+
+/* Scrolling effect styles */
+.scrolled {
+    background-color: #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Section Styles */
+.content {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+section {
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+section h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #555;
+}
